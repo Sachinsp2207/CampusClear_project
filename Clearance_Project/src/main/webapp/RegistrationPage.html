@@ -1,0 +1,116 @@
+   <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+            .container {
+        width: 100%;
+        max-width: 400px;
+        padding: 20px;
+        background-color: #fff;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        border-radius: 5px;
+        margin-top: 100px; /* Add margin from the top */
+    }
+
+        .header {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        input[type="email"] {
+            width: 90%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2 class="header">Registration Form</h2>
+        <form id="registrationForm" action="Register.jsp" method="post">
+            <!-- Personal Details -->
+            <div class="form-group">
+                <label for="fullName">Full Name</label>
+                <input type="text" id="fullName" name="fullName" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="contact">Contact Number</label>
+                <input type="text" id="contact" name="contact" required>
+            </div>
+            <!-- Academic Details -->
+            <div class="form-group">
+                <label for="stream">Stream</label>
+                <input type="text" id="stream" name="stream" required>
+            </div>
+            <div class="form-group">
+                <label for="yop">Year of Passing (YOP)</label>
+                <input type="text" id="yop" name="yop" required>
+            </div>
+            <div class="form-group">
+                <label for="prn">PRN (Permanent Registration Number)</label>
+                <input type="text" id="prn" name="prn" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="lastExamSeatNo">Last Year Exam Seat Number</label>
+                <input type="text" id="lastExamSeatNo" name="lastExamSeatNo" required>
+            </div>
+            <div class="form-group">
+                <label for="purchase">Anything Else to Purchase</label>
+                <input type="text" id="purchase" name="purchase">
+            </div>
+    
+            <button type="submit">Register</button>
+        </form>
+    </div>
+    
+</body>
+</html>
+
+
+
+
